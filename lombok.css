@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#img {
+    background-image: url(image.jpg);
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+body {
+    overflow-x: hidden;
+
+
+}
+
+#imag {}
+
+#text1 {
+    position: relative;
+    top: -300px;
+    font-size: 110px;
+    text-align: center;
+    color: rgb(58, 57, 57);
+    letter-spacing: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#logo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    top: -700px;
+    color: rgb(65, 63, 63);
+    font-size: 30px;
+    left: 20px;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.button {
+    position: relative;
+    top: 10px;
+    text-align: end;
+    letter-spacing: 10px;
+
+
+
+}
+
+#ab:hover {
+    transform: scale(1.25);
+    background-color: rgb(247, 242, 242);
+}
+
+#ar:hover {
+    transform: scale(1.25);
+    background-color: rgb(247, 242, 242);
+
+}
+
+#sb:hover {
+    transform: scale(1.25);
+    background-color: rgb(241, 0, 0);
+}
+
+
+#ab {
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    right: 10px;
+    background-color: transparent;
+    font-weight: bolder;
+    border: transparent;
+}
+
+
+#ar {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: transparent;
+    font-weight: bold;
+    border: transparent;
+}
+
+#sb {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+
+#text2 {
+    color: rgb(131, 129, 129);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 120px;
+
+}
+
+#bg {
+    background-color: #fff9f9;
+    position: relative;
+    top: -190px;
+    letter-spacing: 3px;
+    height: 800px;
+
+}
+
+/* Lazy Load Styles */
+.card-image {
+    display: block;
+    min-height: 13rem;
+    /* layout hack */
+    background: #fff center center no-repeat;
+    background-size: cover;
+    /* blur the lowres image */
+}
+
+.card-image>img {
+    display: block;
+    width: 100%;
+    opacity: 0;
+    /* visually hide the img element */
+}
+
+.card-image.is-loaded {
+    filter: none;
+    /* remove the blur on fullres image */
+    transition: filter 1s;
+}
+
+
+
+
+/* Layout Styles */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.card-list {
+    display: block;
+    margin: 1rem auto;
+    padding: 0;
+    font-size: 0;
+    text-align: center;
+    list-style: none;
+}
+
+.card {
+    display: inline-block;
+    width: 100%;
+    max-width: 20rem;
+
+    margin: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    overflow: hidden;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+}
+
+.card:hover {
+    transform: translateY(-0.5rem) scale(1.0125);
+    box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+}
+
+.card-description {
+    display: block;
+    padding: 1em 0.5em;
+    color: #515151;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card-description>h2 {
+    margin: 0 0 0.5em;
+}
+
+.card-description>p {
+    margin: 0;
+}
+
+#card {
+    position: relative;
+    top: 150px;
+
+}
+
+#img2 {
+    width: 700px;
+    height: 550px;
+    background-position: left;
+    position: relative;
+    top: -190px;
+}
+
+#about {
+    color: rgb(131, 129, 129);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: l;
+    position: relative;
+    top: -550px;
+    right: 250px;
+
+}
+
+#para {
+    font-family: 'Sevillana', cursive;
+    color: rgb(97, 94, 94);
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    position: relative;
+    top: -450px;
+    right: 80px;
+    font-weight: bolder;
+
+}
+
+#abo {
+    position: relative;
+    text-align: end;
+    top: -60px;
+}
+
+#lorem {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(131, 129, 129);
+    text-align: center;
+    position: relative;
+    top: 10px;
+
+}
+
+#div {
+    height: 400px;
+    width: 20px;
+    margin-top: -195px;
+}
+
+#ad {
+    background-color: rgba(195, 212, 188, 0.486);
+    position: relative;
+    top: -252px;
+
+
+
+}
+
+#abc {
+    text-align: center;
+    color: rgb(131, 129, 129);
+    position: relative;
+
+
+}
+
+#fff {
+    border: 0px;
+    width: 420px;
+    height: 50px;
+
+
+}
+
+#com {
+    position: relative;
+    top: -550px;
+}
+
+.submit_btn:hover {
+    background-color: rgb(128, 0, 0);
+    color: white;
+    border: 2px solid white;
+}
+
+.submit_btn {
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    
+}
+#laste{
+ text-align: end;
+ position: relative;
+ top: 150px;
+ right: 80px;
+}
+#bt1{
+    position: relative;
+    right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: transparent;
+    font-weight: bolder;
+    border: transparent;
+    letter-spacing: 3PX;
+    color:rgb(89, 90, 92);
+}
+
+#bt1:hover {
+    
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(250, 250, 250);
+}
+#bt2{
+    position: relative;
+    right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: transparent;
+    font-weight: bolder;
+    border: transparent;
+    letter-spacing: 3PX;
+    color:rgb(89, 90, 92);
+}
+
+#bt2:hover {
+    
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(250, 250, 250);
+}
+#bt3{
+    position: relative;
+    right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: transparent;
+    font-weight: bolder;
+    border: transparent;
+    letter-spacing: 2PX;
+    color:rgb(89, 90, 92);
+}
+
+#bt3:hover {
+  
+    background-color:rgb(128, 0, 0);
+    color: rgb(26, 21, 21);
+    border: 1px solid rgb(15, 15, 15);
+}
+.fa-brands{
+    height: 50px;
+    width: 20px;
+    position: relative;
+    left: 50px;
+    top: 70px;
+}
+#fr{
+    color: #000;
+    width: 50px;
+    height: 5px ;
+}
+
+@media (max-width:510px) {
+    #text1 {
+        font-size: 70px;
+        text-align: center;
+    
+    }
+ 
+    
+    #logo{
+        position: relative;
+        top: -680px;
+    }
+    #img2{
+        position: relative;
+        top: 100px;
+        height: 340px;
+        width: 370px;
+    }
+    .card{
+        height: 300px;
+        width: 300px;
+        position: relative;
+        top: -100px;
+    }
+    .card-image{
+        height: 30px;
+        width: 300px;
+    }
+    #text2{
+        position: relative;
+        top: 50px;
+    }
+    #about{
+        position: relative;
+        top: 150px;
+        left: -125px;
+       
+    }
+    #para{
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        position: relative;
+        top:150px;
+      left: -6px;
+      
+    }
+    #com{
+        height: 200px;
+        position: relative;
+       top: 2px;
+    }
+    #ad{
+        position: relative;
+        top: 300px;
+    }
+    #fff{
+        width: 350px;
+        height: 30px;
+    }
+    #logo,#laste,#icons{
+        display: none;
+    }
+    body{
+        overflow-x: hidden;
+    }
+
+}
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomboke</title>
+    <link rel="stylesheet" href="lombok.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e6bbedf649.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--freand-->
+    <div id="img">
+        <div class="button">
+            <!--buttens-->
+            <a href="#about"><button id="ab">About</button></a>
+            <a href="#text2"> <button id="ar">Articles</button></a>
+            <a href="#abc"> <button id="sb">Subscribe</button></a>
+        </div>
+    </div>
+    <h1 id="text1">LOMBOK</h1>
+    <h3 id="logo">LO</h3>
+    <h1 id="hel">HOLISTIC HEALTH</h1>
+
+    <div id="bg">
+
+
+        <h2 id="text2">LATEST ARTICLES</h2>
+        <div id="fr"></div>
+        <ul id="card" class="card-list">
+
+            <li class="card">
+                <a class="card-image" style="background-image: url(leef\ card.jpeg);">
+                    <img src="" alt="Psychopomp" />
+                </a>
+                <a class="card-description">
+
+                    <p>Lorem assumenda non molestiae quae ea asperiores voluptates minima</p>
+                </a>
+            </li>
+
+            <li class="card">
+                <a class="card-image" style="background-image: url(card\ man.jpeg);">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/lets-go-100.jpg" alt="let's go" />
+                </a>
+                <a class="card-description">
+
+                    <p> Lorem assumenda non molestiae quae
+                        ea asperiores voluptates minima</p>
+                </a>
+            </li>
+
+            <li class="card">
+                <a class="card-image" style="background-image: url(leef2\ card.jpeg)">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/beautiful-game-100.jpg"
+                        alt="The Beautiful Game" />
+                </a>
+                <a class="card-description">
+
+                    <p>Lorem assumenda non molestiae quae ea asperiores voluptates minima</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="im">
+        <img id="img2" src="garden.jpeg" alt="">
+        <div id="abo">
+            <h1 id="about">ABOUT</h1>
+            <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing <br>Lorem ipsum dolor sit amet consectetur,
+                adipisicing <br>Lorem ipsum dolor sit amet consectetur, adipisicing <br>Lorem ipsum dolor sit amet
+                consectetur, adipisicing <br>Lorem ipsum dolor sit amet consectetur, adipisicing <br>Lorem ipsum dolor
+                sit amet consectetur, adipisicing <br>Lorem ipsum dolor sit amet consectetur, adipisicing <br></p>
+        </div>
+    </div>
+
+    <div id="ad">
+        <div id="div"></div>
+    </div>
+    <div id="com">
+        <h2 id="abc">SUBSCRIBE</h2>
+        <h3 id="lorem">Sign-up to our newsletter</h3><br><br>
+        <center><input id="fff" type="text" placeholder="  Your E-mail"></center><br><br>
+        <center> <button class="submit_btn ">&nbsp;&nbsp;&nbsp; SUBMIT &nbsp;&nbsp;&nbsp;</button> </center>
+        <div id="laste">
+            <a href="#about"><button id="bt1">ABOUT</button></a>
+            <a href="#text2"> <button id="bt2">ARTICLS</button></a>
+            <a href="#abc"> <button id="bt3">SUBSCRIBE</button></a> <br><br> <br><br>
+        </div>
+        <div id="icons">
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-whatsapp"></i>
+
+        </div>
+    </div>
+    <!-- end buttens-->
+
+
+
+
+
+    <script>
+        // This is "probably" IE9 compatible but will need some fallbacks for IE8
+        // - (event listeners, forEach loop)
+
+        // wait for the entire page to finish loading
+        window.addEventListener('load', function () {
+
+            // setTimeout to simulate the delay from a real page load
+            setTimeout(lazyLoad, 1000);
+
+        });
+
+        function lazyLoad() {
+            var card_images = document.querySelectorAll('.card-image');
+
+            // loop over each card image
+            card_images.forEach(function (card_image) {
+                var image_url = card_image.getAttribute('data-image-full');
+                var content_image = card_image.querySelector('img');
+
+                // change the src of the content image to load the new high res photo
+                content_image.src = image_url;
+
+                // listen for load event when the new photo is finished loading
+                content_image.addEventListener('load', function () {
+                    // swap out the visible background image with the new fully downloaded photo
+                    card_image.style.backgroundImage = 'url(' + image_url + ')';
+                    // add a class to remove the blur filter to smoothly transition the image change
+                    card_image.className = card_image.className + ' is-loaded';
+                });
+
+            });
+
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>
